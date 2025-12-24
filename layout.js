@@ -1,9 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Cosmicare – Cosmétique & Soins en Algérie",
-  description:
-    "Cosmicare.dz – Produits cosmétiques luxe et standards avec paiement CIB et paiement à la livraison",
+  title: "Cosmicare",
+  description: "Boutique de cosmétiques",
 };
 
 export default function RootLayout({ children }) {
