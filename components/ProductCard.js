@@ -1,10 +1,29 @@
-export default function ProductCard({ product }) {
+"use client";
+
+export default function CheckoutForm({ total }) {
   return (
-    <div className="card card-luxe">
-      {product.badge && <span className="badge">{product.badge}</span>}
-      <h3>{product.name}</h3>
-      <p><strong>{product.price} DA</strong></p>
-      <button className="btn">Ajouter au panier</button>
-    </div>
+    <form className="form">
+      <input type="text" placeholder="Nom & Prénom" required />
+      <input type="tel" placeholder="Téléphone" required />
+
+      <select required>
+        <option value="">Choisir Wilaya</option>
+        <option>Alger</option>
+        <option>Oran</option>
+        <option>Constantine</option>
+        <option>Annaba</option>
+      </select>
+
+      <textarea placeholder="Adresse complète" required></textarea>
+
+      <select required>
+        <option>Paiement à la livraison</option>
+        <option>Paiement CIB</option>
+      </select>
+
+      <button type="submit" className="btn">
+        Commander – {total} DA
+      </button>
+    </form>
   );
 }
