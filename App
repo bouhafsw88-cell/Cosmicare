@@ -1,0 +1,4 @@
+app/
+ ├─ layout.js
+ ├─ page.js
+ └─ globals.css
