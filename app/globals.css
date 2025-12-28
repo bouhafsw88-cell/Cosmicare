@@ -48,3 +48,40 @@ body {
   font-size: 14px;
   color: #999;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.nav-logo {
+  color: #c9a24d;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  color: #f5efe6;
+  transition: color 0.3s;
+}
+
+.nav-links li:hover {
+  color: #c9a24d;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
