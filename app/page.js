@@ -1,8 +1,9 @@
 export default function Home() {
   return (
-    <main style={{ padding: "20px" }}>
-      <h1>Bienvenue sur Cosmicare 💄</h1>
-      <p>Votre boutique de cosmétiques en ligne</p>
-    </main>
+    <section className="hero">
+      <h2>La beauté qui vous ressemble</h2>
+      <p>Produits cosmétiques premium pour femmes élégantes</p>
+      <button className="cta">Découvrir</button>
+    </section>
   );
 }
