@@ -1,4 +1,5 @@
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: "Cosmicare",
@@ -9,10 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body>
-        <header className="header">
-          <h1 className="logo">Cosmicare</h1>
-        </header>
-
+        <Navbar />
         <main>{children}</main>
 
         <footer className="footer">
